@@ -2,8 +2,8 @@
   <img src="https://github.com/Mahmud0808/SheGuard/blob/master/banner.png" width="100%" alt="Banner">
 </div>
 
-# ✨ SheGuard
-SheGuard stands as the quintessential companion for women, ensuring their safety in every circumstance. Through its user-friendly features, it empowers you to swiftly alert your loved ones of your whereabouts and connect with emergency services effortlessly.
+# ✨ SheShield
+SheShield stands as the quick essential companion for women, ensuring their safety in every circumstance. Through its user-friendly features, it empowers you to swiftly alert your loved ones of your whereabouts and connect with emergency services effortlessly.
 
 ## Screenshots 📱
 <div align="center">
@@ -64,13 +64,8 @@ You need to have [Android Studio Giraffe or above](https://developer.android.com
 
 Wanna reach out to me? DM me at 👇
 
-Email: mahmudul15-13791@diu.edu.bd
+Email: nithinkata29@gmail.com
 
-## Donation 💰
-
-If this project help you reduce time to develop, you can give me a cup of coffee :)
-
-<a href="https://www.buymeacoffee.com/DrDisagree"><img src="https://github.com/Mahmud0808/Iconify/blob/beta/.github/resources/bmc-button.png" width="30%" alt="Buy me a coffee" /></a>
 
 ## Credits 🤝
 
