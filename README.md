@@ -59,11 +59,6 @@ You need to have [Android Studio Giraffe or above](https://developer.android.com
   - Copy the `project_id` of your private key and paste it in [NotificationAPI.java](https://github.com/Mahmud0808/SheGuard/blob/master/app/src/main/java/com/android/sheguard/api/NotificationAPI.java)
 
 - That's it. Now you are good to go!
-
-## Contact 📩
-
-Wanna reach out to me? DM me at 👇
-
 Email: nithinkata29@gmail.com
 
 
