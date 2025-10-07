@@ -1,5 +1,6 @@
 <div align="center">
-  <img src="" width="100%" alt="Banner">
+  <img src="![WhatsApp Image 2025-09-28 at 13 41 04_a4c6d679](https://github.com/user-attachments/assets/d562ff31-0d62-4366-ac48-c46493cf0c1d)
+" width="100%" alt="Banner">
 </div>
 
 # ✨ SheShield
