@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/Mahmud0808/SheGuard/blob/master/banner.png" width="100%" alt="Banner">
+  <img src="" width="100%" alt="Banner">
 </div>
 
 # ✨ SheShield
