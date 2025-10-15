@@ -1,8 +1,3 @@
-<div align="center">
-  <img src="![WhatsApp Image 2025-09-28 at 13 41 04_a4c6d679](https://github.com/user-attachments/assets/d562ff31-0d62-4366-ac48-c46493cf0c1d)
-" width="100%" alt="Banner">
-</div>
-
 # ✨ SheShield
 SheShield stands as the quick essential companion for women, ensuring their safety in every circumstance. Through its user-friendly features, it empowers you to swiftly alert your loved ones of your whereabouts and connect with emergency services effortlessly.
 
@@ -60,6 +55,7 @@ You need to have [Android Studio Giraffe or above](https://developer.android.com
   - Copy the `project_id` of your private key and paste it in [NotificationAPI.java](https://github.com/Mahmud0808/SheGuard/blob/master/app/src/main/java/com/android/sheguard/api/NotificationAPI.java)
 
 - That's it. Now you are good to go!
+  
 Email: nithinkata29@gmail.com
 
 
