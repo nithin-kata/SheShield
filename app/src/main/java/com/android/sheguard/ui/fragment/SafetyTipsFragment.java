@@ -60,6 +60,15 @@ public class SafetyTipsFragment extends Fragment {
         safetyTips.add(getString(R.string.safety_tips_tip_19));
         safetyTips.add(getString(R.string.safety_tips_tip_20));
         safetyTips.add(getString(R.string.safety_tips_tip_21));
+        safetyTips.add(getString(R.string.safety_tips_tip_22));
+        safetyTips.add(getString(R.string.safety_tips_tip_23));
+        safetyTips.add(getString(R.string.safety_tips_tip_24));
+        safetyTips.add(getString(R.string.safety_tips_tip_25));
+        safetyTips.add(getString(R.string.safety_tips_tip_26));
+        safetyTips.add(getString(R.string.safety_tips_tip_27));
+        safetyTips.add(getString(R.string.safety_tips_tip_28));
+        safetyTips.add(getString(R.string.safety_tips_tip_29));
+        safetyTips.add(getString(R.string.safety_tips_tip_30));
 
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(requireContext()));
         adapter = new SafetyTipsAdapter(requireContext(), safetyTips);
