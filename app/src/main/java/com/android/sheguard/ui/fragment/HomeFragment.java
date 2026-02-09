@@ -27,6 +27,7 @@ import com.android.sheguard.databinding.FragmentHomeBinding;
 import com.android.sheguard.service.SosService;
 import com.android.sheguard.ui.activity.LoginRegisterActivity;
 import com.android.sheguard.ui.activity.MainActivity;
+import com.android.sheguard.ui.activity.AnonymousReportActivity;   // ✅ ADDED
 import com.android.sheguard.util.AppUtil;
 import com.android.sheguard.util.FirebaseUtil;
 import com.android.sheguard.util.SosUtil;
@@ -107,6 +108,11 @@ public class HomeFragment extends Fragment {
         binding.safetyTips.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_safetyTipsFragment));
         binding.about.setOnClickListener(v -> Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_aboutFragment));
 
+        // Anonymous Report click
+        binding.anonymousReport.setOnClickListener(v -> {
+            startActivity(new Intent(requireContext(), AnonymousReportActivity.class));
+        });
+
         FirebaseUtil.updateToken();
 
         initializeDrawerItems();
@@ -174,25 +180,27 @@ public class HomeFragment extends Fragment {
         }, 200);
     }
 
-    private final ActivityResultLauncher<String[]> multiplePermissions = registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(), new ActivityResultCallback<Map<String, Boolean>>() {
-        @Override
-        public void onActivityResult(Map<String, Boolean> result) {
-            Iterator<Map.Entry<String, Boolean>> it = result.entrySet().iterator();
-            while (it.hasNext()) {
-                Map.Entry<String, Boolean> pair = it.next();
-                if (!pair.getValue()) {
-                    Snackbar snackbar = Snackbar.make(requireActivity().findViewById(android.R.id.content), R.string.permission_must_be_granted, Snackbar.LENGTH_INDEFINITE);
-                    snackbar.setAction(R.string.grant, v -> {
-                        multiplePermissions.launch(new String[]{pair.getKey()});
-                        snackbar.dismiss();
-                    });
-                    snackbar.show();
-                }
+    private final ActivityResultLauncher<String[]> multiplePermissions =
+            registerForActivityResult(new ActivityResultContracts.RequestMultiplePermissions(),
+                    new ActivityResultCallback<Map<String, Boolean>>() {
+                        @Override
+                        public void onActivityResult(Map<String, Boolean> result) {
+                            Iterator<Map.Entry<String, Boolean>> it = result.entrySet().iterator();
+                            while (it.hasNext()) {
+                                Map.Entry<String, Boolean> pair = it.next();
+                                if (!pair.getValue()) {
+                                    Snackbar snackbar = Snackbar.make(requireActivity().findViewById(android.R.id.content), R.string.permission_must_be_granted, Snackbar.LENGTH_INDEFINITE);
+                                    snackbar.setAction(R.string.grant, v -> {
+                                        multiplePermissions.launch(new String[]{pair.getKey()});
+                                        snackbar.dismiss();
+                                    });
+                                    snackbar.show();
+                                }
 
-                if (!it.hasNext() && AppUtil.permissionsGranted(getActivity())) {
-                    binding.btnShakeDetection.performClick();
-                }
-            }
-        }
-    });
+                                if (!it.hasNext() && AppUtil.permissionsGranted(getActivity())) {
+                                    binding.btnShakeDetection.performClick();
+                                }
+                            }
+                        }
+                    });
 }
