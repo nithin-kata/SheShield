@@ -19,6 +19,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <!-- SOS -->
             <LinearLayout
                 android:id="@+id/sos_button"
                 android:layout_width="280dp"
@@ -41,9 +42,9 @@
                     android:textAlignment="center"
                     android:textColor="?attr/colorOnError"
                     android:textSize="60sp" />
-
             </LinearLayout>
 
+            <!-- Shake Detection -->
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_shake_detection"
                 style="@style/Widget.Material3.Button.OutlinedButton"
@@ -56,6 +57,7 @@
                 android:textSize="16sp"
                 app:cornerRadius="@dimen/component_corner_radius" />
 
+            <!-- Row 1 : Contacts + Helpline -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -72,7 +74,6 @@
                     android:layout_marginBottom="@dimen/margin_8"
                     android:layout_weight="1"
                     android:background="@drawable/container"
-                    android:baselineAligned="false"
                     android:clickable="true"
                     android:focusable="true"
                     android:orientation="vertical"
@@ -116,7 +117,6 @@
                     android:layout_marginBottom="@dimen/margin_8"
                     android:layout_weight="1"
                     android:background="@drawable/container"
-                    android:baselineAligned="false"
                     android:clickable="true"
                     android:focusable="true"
                     android:orientation="vertical"
@@ -151,8 +151,10 @@
                         app:tint="?attr/colorPrimary" />
 
                 </LinearLayout>
+
             </LinearLayout>
 
+            <!-- Row 2 : Safety Tips + About -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,12 +165,11 @@
                 <LinearLayout
                     android:id="@+id/safety_tips"
                     android:layout_width="0dp"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin_4"
                     android:layout_marginBottom="@dimen/margin_8"
                     android:layout_weight="1"
                     android:background="@drawable/container"
-                    android:baselineAligned="false"
                     android:clickable="true"
                     android:focusable="true"
                     android:orientation="vertical"
@@ -196,7 +197,6 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:layout_gravity="start|bottom"
                         android:layout_marginTop="@dimen/margin_16"
                         android:contentDescription="@android:string/untitled"
                         android:src="@drawable/ic_safety_tips"
@@ -212,7 +212,6 @@
                     android:layout_marginBottom="@dimen/margin_8"
                     android:layout_weight="1"
                     android:background="@drawable/container"
-                    android:baselineAligned="false"
                     android:clickable="true"
                     android:focusable="true"
                     android:orientation="vertical"
@@ -240,14 +239,63 @@
                     <ImageView
                         android:layout_width="28dp"
                         android:layout_height="28dp"
-                        android:layout_gravity="start|bottom"
                         android:layout_marginTop="@dimen/margin_16"
                         android:contentDescription="@android:string/untitled"
                         android:src="@drawable/ic_about"
                         app:tint="?attr/colorPrimary" />
 
                 </LinearLayout>
+
             </LinearLayout>
+
+            <!-- Row 3 : Anonymous Report -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/margin_16"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/anonymous_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_8"
+                    android:background="@drawable/container"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:paddingVertical="15dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anonymous Report"
+                        android:textColor="?attr/colorOnSurface"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Report an incident anonymously"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:contentDescription="@android:string/untitled"
+                        android:src="@drawable/ic_about"
+                        app:tint="?attr/colorPrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
