@@ -49,7 +49,7 @@
     <string name="activity_about_title">About</string>
     <string name="activity_about_desc">Learn more about our mission</string>
 
-    <string name="background_story">In recent years, we\'ve witnessed a surge in incidents targeting women, children, and the elderly. These atrocities have grown increasingly alarming, urging us to seek a solution. Introducing SheGuard, our innovative response to these challenges.\n\nSheGuard empowers you by putting your safety back into your hands. We\'ve developed a comprehensive SMS Alert system that keeps your family and friends informed during times of distress.</string>
+    <string name="background_story">In recent years, we\'ve witnessed a surge in incidents targeting women, children, and the elderly. These atrocities have grown increasingly alarming, urging us to seek a solution. Introducing SheShield, our innovative response to these challenges.\n\nSheShield empowers you by putting your safety back into your hands. We\'ve developed a comprehensive SMS Alert system that keeps your family and friends informed during times of distress.</string>
     <string name="whats_good">What\'s Good About This App?</string>
     <string name="intuitive_design">Intuitive Design</string>
     <string name="intuitive_design_desc">Experience seamless navigation through our app, designed with the principles of material design, ensuring both functionality and aesthetics.</string>
@@ -59,7 +59,7 @@
     <string name="automatic_alerts_desc">SheShield provides you with an instant lifeline. A simple press of the SOS button sends automated SMS alerts to your selected contacts, including your precise location.</string>
     <string name="meet_the_developer">Meet The Developer</string>
     <string name="dev_name">KATA NITHIN</string>
-    <string name="dev_bio">Passionate Android Developer\nOpen-source contributor</string>
+    <string name="dev_bio">Passionate Android Developer</string>
     <string name="github">Github</string>
     <string name="contact_empty">Contact list is empty</string>
     <string name="new_name">New name</string>
