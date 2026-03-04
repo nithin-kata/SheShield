@@ -12,7 +12,7 @@ import com.android.sheguard.R;
 
 public class AnonymousReportActivity extends AppCompatActivity {
 
-    private static final String GOOGLE_FORM_URL = "https://forms.gle/YOUR_LINK";
+    private static final String GOOGLE_FORM_URL = "https://forms.gle/xiZWfEWb5kS3ogF59";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
