@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="https://github.com/Mahmud0808/SheGuard/blob/master/banner.png" width="100%" alt="Banner">
-</div>
-
 # ✨ SheShield
 SheShield stands as the quick essential companion for women, ensuring their safety in every circumstance. Through its user-friendly features, it empowers you to swiftly alert your loved ones of your whereabouts and connect with emergency services effortlessly.
 
