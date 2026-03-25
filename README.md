@@ -57,6 +57,38 @@ You need to have [Android Studio Giraffe or above](https://developer.android.com
 - That's it. Now you are good to go!
 Email: nithinkata29@gmail.com
 
+## APK Download
+
+👉 APK here : 
+
+## 📲 How to Use (After Installing APK)
+1. Install the App
+Download APK
+Enable "Install from Unknown Sources"
+Install manually
+2. Create Account
+Open app
+Sign up using email & password
+3. Setup Safety
+Add trusted contacts
+Allow permissions:
+Location
+SMS
+Phone
+4. Use Core Features
+Share live location anytime
+Access helpline numbers
+Read safety tips
+5. Emergency (SOS Mode)
+Shake phone → triggers SOS
+Sends alerts + location
+Starts siren + emergency call
+⚠️ Permissions Required
+Location → for tracking
+SMS → for alerts
+Phone → for emergency calls
+Internet → for real-time updates
+
 
 ## Credits 🤝
 
