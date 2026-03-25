@@ -1,64 +1,92 @@
-# ✨ SheShield
-SheShield stands as the quick essential companion for women, ensuring their safety in every circumstance. Through its user-friendly features, it empowers you to swiftly alert your loved ones of your whereabouts and connect with emergency services effortlessly.
+✨ SheShield
 
-## Screenshots 📱
-<div align="center">
-<img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/onboarding.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/signin.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/signup.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/home.jpg" width="15%" />
-<img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/profile.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/edit_profile.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/contacts.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/helpline.jpg" width="15%" />
-<img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/safety_tips.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/settings.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/about.jpg" width="15%" />
-</div>
+SheShield is a smart safety companion designed for women. It enables quick emergency response, real-time location sharing, and instant communication with trusted contacts—helping ensure safety anytime, anywhere.
 
-## Features 🔥
+📱 Screenshots
+<div align="center"> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/onboarding.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/signin.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/signup.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/home.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/profile.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/edit_profile.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/contacts.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/helpline.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/safety_tips.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/settings.jpg" width="15%" /> <img src="https://github.com/Mahmud0808/SheGuard/blob/master/screenshots/about.jpg" width="15%" /> </div>
+🔥 Features
+👤 User Management
+Login & Registration system
+Secure authentication
+🛡️ Safety Measures
+Live location sharing
+Add up to 10 trusted contacts
+In-app notifications for users
+SMS alerts for non-users
+🚨 Emergency Assistance
+Emergency helpline access
+Built-in safety tips
+⚡ SOS Mode
+Shake detection to trigger SOS
+Loud siren alert
+Automatic emergency calling
+🗼 Architecture
+Firebase Authentication
+Firebase Cloud Messaging (FCM)
+Realtime database support
+🧰 Build Tool
+Android Studio (Giraffe or above)
+🚀 Getting Started (Development Setup)
+Open Android Studio
 
-- **User Management:**
-  - **Login and Registration:** Easy access for users.
+Go to:
 
-- **Safety Measures:**
-  - **Live Location Sharing:** Instantly share your location with trusted contacts.
-  - **Trusted Contacts:** Add up to 10 trusted contacts for quick access.
-  - **User Notifications:** Alert contacts who are also SheGuard users via notifications.
-  - **SMS Notifications:** Reach out to non-users via SMS notifications.
+Tools → Firebase → Authentication
+Connect your project to Firebase
+🔑 Firebase Setup
+Enable Email/Password Authentication
+Disable Email Link (Passwordless)
+🔧 Additional Setup
+Enable Token Service API
+Generate service_account.json
 
-- **Emergency Assistance:**
-  - **Emergency Helplines:** Access important emergency contact numbers.
-  - **Safety Tips:** Learn from a list of safety tips to stay secure.
+Place it inside:
 
-- **SOS Mode:**
-  - **Shake Detection:** Trigger SOS mode with a simple shake gesture.
-  - **Audible Alert:** Activate a loud siren to attract attention.
-  - **Automatic Emergency Call:** Connect with emergency services instantly in SOS mode.
+app/src/main/res/raw
 
-## Architecture 🗼
+Copy project_id → paste in:
 
-This app uses [***Firebase***](https://firebase.google.com/) services.
+NotificationAPI.java
+📦 APK Download
 
-## Build-Tool 🧰
+👉 Add your APK here (recommended options):
 
-You need to have [Android Studio Giraffe or above](https://developer.android.com/studio) to build this project.
+Upload APK to GitHub Releases
+Or use Google Drive / Firebase Hosting
 
-## Getting Started 🚀
+Example:
 
-- In Android Studio project, go to `Tools` > `Firebase` > `Authentication` > `Authenticate using a custom authentication system`:
-  - First, `Connect to Firebase`
-  - After that, `Add the Firebase Authentication SDK to your app`
+https://github.com/your-username/sheshield/releases/download/v1.0/app-release.apk
+📲 How to Use (After Installing APK)
+1. Install the App
+Download APK
+Enable "Install from Unknown Sources"
+Install manually
+2. Create Account
+Open app
+Sign up using email & password
+3. Setup Safety
+Add trusted contacts
+Allow permissions:
+Location
+SMS
+Phone
+4. Use Core Features
+Share live location anytime
+Access helpline numbers
+Read safety tips
+5. Emergency (SOS Mode)
+Shake phone → triggers SOS
+Sends alerts + location
+Starts siren + emergency call
+⚠️ Permissions Required
+Location → for tracking
+SMS → for alerts
+Phone → for emergency calls
+Internet → for real-time updates
+🤝 Credits
+icons8.com for icons
+📧 Contact
 
-- Now open your project's [Firebase Console](https://console.firebase.google.com/) > `Authentication` > `Sign-in method`:
-  - Enable `Email/Password`
-  - Do not enable `Email link (passwordless sign-in)`
-
-- Enable [Token Service API](https://console.cloud.google.com/apis/library/securetoken.googleapis.com)
-
-- After that, go to your project's [Firebase Console](https://console.firebase.google.com/) > `Settings icon` (beside Project Overview) > `Project Settings` > `Service accounts`:
-  - Generate new private key, rename the key to `service_account.json` and paste the file in [/res/raw](https://github.com/Mahmud0808/SheGuard/tree/master/app/src/main/res/raw)
-
-- Open the `service_account.json` file:
-  - Copy the `project_id` of your private key and paste it in [NotificationAPI.java](https://github.com/Mahmud0808/SheGuard/blob/master/app/src/main/java/com/android/sheguard/api/NotificationAPI.java)
-
-- That's it. Now you are good to go!
-  
-Email: nithinkata29@gmail.com
-
-
-## Credits 🤝
-
-- [icons8.com](https://icons8.com) for the in-app icons.
+Nithin Kata
+📩 nithinkata29@gmail.com
